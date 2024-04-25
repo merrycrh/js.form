@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 430px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.container h2 {
+  margin: 30px 0;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  border: none;
+  border-bottom: 1px solid #909090;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 6px 10px;
+}
+
+.btn {
+  margin-top: 40px;
+}
+
+.btn button {
+  width: 90px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn1 {
+  background-color: rgb(13, 212, 13);
+}
+.btn1:hover {
+  cursor: pointer;
+  background-color: rgb(6, 119, 6);
+}
+
+.btn2 {
+  background-color: rgb(212, 46, 13);
+  margin-left: 5px;
+}
+.btn2:hover {
+  cursor: pointer;
+  background-color: rgb(153, 34, 10);
+}
+
+.output {
+  border: 1px solid #909090;
+  border-top: none;
+  padding: 40px 20px;
+  font-size: 24px;
+}
+
+.output p {
+  margin: 20px 0;
+}
