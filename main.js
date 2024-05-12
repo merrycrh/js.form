@@ -1,4 +1,3 @@
-// Function to create social media icons
 function createIcon(iconClass) {
     const icon = document.createElement("i");
     icon.classList.add("fa-brands");
@@ -14,7 +13,6 @@ function createIcon(iconClass) {
     }, 4000);
 }
 
-// Create icons at intervals
 setInterval(() => createIcon("fa-telegram"), 100);
 setInterval(() => createIcon("fa-instagram"), 100);
 setInterval(() => createIcon("fa-square-twitter"), 100);
