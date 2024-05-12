@@ -1,64 +1,21 @@
-setInterval(createTelegram, 100)
-setInterval(createInstagram, 100)
-setInterval(createTwitter, 100)
-setInterval(createYoutube, 100)
+// Function to create social media icons
+function createIcon(iconClass) {
+    const icon = document.createElement("i");
+    icon.classList.add("fa-brands");
+    icon.classList.add(iconClass);
 
-function createTelegram() {
-    const telegram = document.createElement("i");
-    telegram.classList.add("fa-brands");
-    telegram.classList.add("fa-telegram");
-
-    telegram.style.left = Math.random() * window.innerWidth + "px";
-    telegram.style.animationDuration = Math.random() * 3 +2 + "s";
-    telegram.style.opacity = Math.random();
-    document.body.append(telegram);
+    icon.style.left = Math.random() * window.innerWidth + "px";
+    icon.style.animationDuration = Math.random() * 3 + 2 + "s";
+    icon.style.opacity = Math.random();
+    document.querySelector(".social-icons").append(icon);
 
     setTimeout(() => {
-        telegram.remove();
+        icon.remove();
     }, 4000);
 }
 
-function createInstagram() {
-    const instagram = document.createElement("i");
-    instagram.classList.add("fa-brands");
-    instagram.classList.add("fa-instagram");
-
-    instagram.style.left = Math.random() * window.innerWidth + "px";
-    instagram.style.animationDuration = Math.random() * 3 +2 + "s";
-    instagram.style.opacity = Math.random();
-    document.body.append(instagram);
-
-    setTimeout(() => {
-        instagram.remove();
-    }, 4000);
-}
-
-function createTwitter() {
-    const twitter = document.createElement("i");
-    twitter.classList.add("fa-brands");
-    twitter.classList.add("fa-square-twitter");
-
-    twitter.style.left = Math.random() * window.innerWidth + "px";
-    twitter.style.animationDuration = Math.random() * 3 +2 + "s";
-    twitter.style.opacity = Math.random();
-    document.body.append(twitter);
-
-    setTimeout(() => {
-        twitter.remove();
-    }, 4000);
-}
-
-function createYoutube() {
-    const youatube = document.createElement("i");
-    youatube.classList.add("fa-brands");
-    youatube.classList.add("fa-youtube");
-
-    youatube.style.left = Math.random() * window.innerWidth + "px";
-    youatube.style.animationDuration = Math.random() * 3 +2 + "s";
-    youatube.style.opacity = Math.random();
-    document.body.append(youatube);
-
-    setTimeout(() => {
-        youatube.remove();
-    }, 4000);
-}
+// Create icons at intervals
+setInterval(() => createIcon("fa-telegram"), 100);
+setInterval(() => createIcon("fa-instagram"), 100);
+setInterval(() => createIcon("fa-square-twitter"), 100);
+setInterval(() => createIcon("fa-youtube"), 100);

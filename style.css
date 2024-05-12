@@ -1,3 +1,8 @@
+:root {
+    --primary-color: rgb(248, 216, 147);
+    --background-color: rgb(33, 3, 62);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,38 +10,19 @@
 }
 
 body {
-    background-color: rgb(33, 3, 62);
+    background-color: var(--background-color);
     overflow: hidden;
 }
 
-.fa-instagram {
-    color: rgb(248, 216, 147);
+.social-icons {
+    position: relative;
+}
+
+.fa-brands {
+    color: var(--primary-color);
     position: absolute;
-    top: -20px;
     animation: fall 4s linear forwards;
 }
-
-.fa-youtube {
-    color: rgb(248, 216, 147);
-    position: absolute;
-    left: 400px;
-    animation: fall 4s linear forwards;
-}
-
-.fa-telegram {
-    color: rgb(248, 216, 147);
-    position: absolute;
-    left: 700px;
-    animation: fall linear forwards;
-}
-
-.fa-square-twitter {
-    color: rgb(248, 216, 147);
-    position: absolute;
-    left: 100px;
-    animation: fall 4s linear forwards;
-}
-
 
 @keyframes fall {
     to {
