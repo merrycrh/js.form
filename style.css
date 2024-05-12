@@ -1,68 +1,45 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-  width: 430px;
-  margin: 0 auto;
-  font-family: sans-serif;
+body {
+    background-color: rgb(33, 3, 62);
+    overflow: hidden;
 }
 
-.container h2 {
-  margin: 30px 0;
-}
-.inputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.inputs input {
-  border: none;
-  border-bottom: 1px solid #909090;
-  font-size: 18px;
-  margin-top: 20px;
-  padding: 6px 10px;
+.fa-instagram {
+    color: rgb(248, 216, 147);
+    position: absolute;
+    top: -20px;
+    animation: fall 4s linear forwards;
 }
 
-.btn {
-  margin-top: 40px;
+.fa-youtube {
+    color: rgb(248, 216, 147);
+    position: absolute;
+    left: 400px;
+    animation: fall 4s linear forwards;
 }
 
-.btn button {
-  width: 90px;
-  height: 40px;
-  border: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 4px;
+.fa-telegram {
+    color: rgb(248, 216, 147);
+    position: absolute;
+    left: 700px;
+    animation: fall linear forwards;
 }
 
-.btn1 {
-  background-color: rgb(13, 212, 13);
-}
-.btn1:hover {
-  cursor: pointer;
-  background-color: rgb(6, 119, 6);
-}
-
-.btn2 {
-  background-color: rgb(212, 46, 13);
-  margin-left: 5px;
-}
-.btn2:hover {
-  cursor: pointer;
-  background-color: rgb(153, 34, 10);
+.fa-square-twitter {
+    color: rgb(248, 216, 147);
+    position: absolute;
+    left: 100px;
+    animation: fall 4s linear forwards;
 }
 
-.output {
-  border: 1px solid #909090;
-  border-top: none;
-  padding: 40px 20px;
-  font-size: 24px;
-}
 
-.output p {
-  margin: 20px 0;
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
 }
